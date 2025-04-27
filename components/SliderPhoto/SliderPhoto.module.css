@@ -1,0 +1,63 @@
+.carouselSlider:global(.slick-slider) {
+  margin:0 -35px;
+}
+
+.carouselSlider :global(.slick-list) {
+  overflow-x: clip;
+  overflow-y: initial;
+  margin:0 -100px;
+}
+.carouselSlider :global(.slick-track) {
+  display: flex;
+}
+
+.carouselSlider :global(.slick-slide>div) {
+  height: 100%;
+}
+
+.carouselSlider :global(.slick-slide>div>div) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.carouselSlider :global(.slick-slide) {
+  height: auto;
+  /* opacity: 0; */
+  padding: 0 20px;
+  transition: all 0.3s ease;
+}
+
+.carouselSlider :global(.slick-active) {
+  opacity: 1;
+}
+
+.carouselSlider :global(.slick-current) {
+  transform: scale(1.2);
+}
+
+.carouselSlider :global(.slick-prev) {
+  left: -10px;
+  z-index: 1;
+}
+
+.carouselSlider :global(.slick-next) {
+  right: -10px;
+}
+
+@media (max-width: 740px) {
+
+  .carouselSlider :global(.slick-slide>div) {
+    padding:0
+  }
+  .carouselSlider :global(.slick-list) {
+    /* overflow: initial; */
+    margin:0 -170px;
+  }
+  .carouselSlider :global(.slick-slide) {
+    height: auto;
+    padding: 0 15px;
+    transition: all 0.3s ease;
+  }
+}

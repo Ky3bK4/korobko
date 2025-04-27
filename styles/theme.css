@@ -1,0 +1,48 @@
+@theme {
+  --font-primaryFont: Fira_Code, sans-serif; /* primary font */
+  --container: initial;
+  --color-primary: #0070f3;
+  --color-secondary: #1c1c1e;
+  --color-footer: #1c1c1e;
+
+  --spacing-50: 50px;
+  --spacing-100: 100px;
+
+  --container-8xl: 1520px; /* 1420px (width of the container) + 100px (padding) */
+  --container-9xl: 1780px; /* 1680px (width of the container) + 100px (padding) */
+}
+
+@layer base {
+  html, body  {
+    height: 100%;
+  }
+  #__next {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+  }
+  main {
+    flex: 1;
+    height: 100%;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold;
+  }
+
+  p {
+    color: #4f4f4f;
+  }
+}
+
+
+
+
+@layer utilities {
+  .container {
+    @apply mx-auto w-full max-w-8xl px-5 md:px-50;
+  }
+  .container-9xl {
+    @apply mx-auto w-full max-w-9xl px-5 md:px-50;
+  }
+}
