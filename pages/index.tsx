@@ -18,7 +18,7 @@ export default function Home() {
       className={`${primaryFont.className} flex min-h-screen flex-col items-center overflow-hidden bg-[#6d6e4b]`}
     >
       <div className="flex w-full max-w-[440px] flex-col items-center px-[35px] pt-10 pb-[450px]">
-        <h1 className="relative flex w-full items-baseline justify-between gap-x-2 gap-y-3 text-left font-[Cambria] text-3xl leading-[1] font-semibold text-white">
+        <h1 className="relative flex w-full items-baseline justify-between gap-x-2 gap-y-3 text-left font-[Cambria] text-2xl leading-[1] font-semibold text-white">
           Коробко Олексій <br />
           Леонідович{" "}
           <span className="absolute right-0 bottom-0 ml-auto text-sm md:text-base">
@@ -40,7 +40,7 @@ export default function Home() {
               />
             </div>
             <div className="mt-[-80px] w-full bg-white p-10 pt-[110px] shadow-md">
-              <p className="text-sm md:text-base">
+              <p className="text-sm md:text-base text-center">
                 Народився Олексій 18 вересня 1989 року в місті Дніпро в
                 багатодітній родині, мав три сестри та два брата
               </p>
@@ -283,7 +283,7 @@ export default function Home() {
         </div>
       </div>
       {/* Футер */}
-      <footer className="mt-2 w-full max-w-xl rounded-b-lg bg-[#6d6e4b] px-9 py-6 text-center font-[Cambria] text-sm text-white md:text-base">
+      <footer className="mt-2 w-full max-w-xl rounded-b-lg font-bold bg-[#6d6e4b] px-9 py-6 text-center font-[Cambria] text-sm text-white md:text-base">
         Світла пам'ять про нашого захисника залишиться у наших серцях. Нехай
         загине тіло та згасне його серце, пам'ять про нього житиме вічно.
       </footer>
