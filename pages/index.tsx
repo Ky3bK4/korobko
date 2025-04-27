@@ -17,7 +17,7 @@ export default function Home() {
     <div
       className={`${primaryFont.className} flex min-h-screen flex-col items-center overflow-hidden bg-[#6d6e4b]`}
     >
-      <div className="flex w-full max-w-[440px] flex-col items-center px-5 pt-10 pb-[450px]">
+      <div className="flex w-full max-w-[440px] flex-col items-center px-[35px] pt-10 pb-[450px]">
         <h1 className="relative flex w-full items-baseline justify-between gap-x-2 gap-y-3 text-left font-[Cambria] text-3xl leading-[1] font-semibold text-white">
           Коробко Олексій <br />
           Леонідович{" "}
