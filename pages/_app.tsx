@@ -33,6 +33,8 @@ export default function App({ Component, pageProps }: AppProps) {
           property="og:description"
           content="Світла пам'ять про нього назавжди залишиться у наших серцях. Нехай його ім'я живе вічно серед тих, хто пам'ятає та любить."
         />
+        <meta property="og:url" content={`${process.env.NEXT_PUBLIC_PUBLIC_URL}`} />
+        <meta property="og:type" content="website" />
         <meta
           property="og:image"
           content={`${process.env.NEXT_PUBLIC_PUBLIC_URL}/assets/images/photo_2025-04-27_16-48-27.jpg`}
