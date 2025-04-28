@@ -39,6 +39,20 @@ export default function App({ Component, pageProps }: AppProps) {
           property="og:image"
           content={`${process.env.NEXT_PUBLIC_PUBLIC_URL}/assets/images/photo_2025-04-27_16-48-27.jpg`}
         />
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta
+          property="twitter:url"
+          content={`${process.env.NEXT_PUBLIC_PUBLIC_URL}`}
+        />
+        <meta property="twitter:title" content="Коробко Олексій Леонідович" />
+        <meta
+          property="twitter:description"
+          content="Світла пам'ять про нього назавжди залишиться у наших серцях. Нехай його ім'я живе вічно серед тих, хто пам'ятає та любить."
+        />
+        <meta
+          property="twitter:image"
+          content={`${process.env.NEXT_PUBLIC_PUBLIC_URL}/assets/images/photo_2025-04-27_16-48-27.jpg`}
+        />
       </Head>
       <Component {...pageProps} />
     </MobileContext.Provider>
