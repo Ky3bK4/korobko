@@ -1,7 +1,7 @@
 import { SliderPhoto } from "@/components/SliderPhoto/SliderPhoto";
 import { primaryFont } from "@/fonts/fonts";
 import styles from "@/components/SliderPhoto/SliderPhoto.module.css";
-import imgHeader from "@/public/assets/images/photo_2025-04-27_16-48-27.jpg"
+import imgHeader from "@/public/assets/images/photo_2025-04-27_16-48-27.jpg";
 // @ts-expect-error "Image"
 import Slider from "react-slick";
 
@@ -17,14 +17,14 @@ export default function Home() {
     <div
       className={`${primaryFont.className} flex min-h-screen flex-col items-center overflow-hidden bg-[#6d6e4b]`}
     >
-      <div className="flex w-full max-w-[440px] flex-col items-center px-[35px] pt-10 pb-[450px]">
-        <h1 className="relative flex w-full items-baseline justify-between gap-x-2 gap-y-3 text-left font-[Cambria] text-2xl leading-[1] font-semibold text-white">
+      <div className="items-left flex w-full max-w-[440px] flex-col gap-y-2 px-[35px] pt-6 pb-[430px]">
+        <h1 className="relative flex w-full flex-col items-baseline justify-between gap-x-2 gap-y-3 text-left font-[Cambria] text-2xl leading-[1] font-semibold text-white">
           Коробко Олексій <br />
-          Леонідович{" "}
-          <span className="absolute right-0 bottom-0 ml-auto text-sm md:text-base">
-            18.09.1989-04.12.2024
-          </span>
+          Леонідович "Блек"
         </h1>
+        <span className="text-sm text-white md:text-base">
+          18.09.1989 - 04.12.2024
+        </span>
       </div>
 
       <div className="flex w-full flex-col items-center bg-[#a59a86]">
@@ -40,9 +40,9 @@ export default function Home() {
               />
             </div>
             <div className="mt-[-80px] w-full bg-white p-10 pt-[110px] shadow-md">
-              <p className="text-sm md:text-base text-center">
+              <p className="text-center text-sm md:text-base">
                 Народився Олексій 18 вересня 1989 року в місті Дніпро в
-                багатодітній родині, мав три сестри та два брата
+                багатодітній родині, мав три сестри та два брата.
               </p>
             </div>
           </div>
@@ -124,14 +124,12 @@ export default function Home() {
                     >
                       <Image
                         fill
-                        className={clsx(
-                          "object-cover",
-                        )}
+                        className={clsx("object-cover")}
                         src={photo}
                         alt="Фото"
                       />
                     </div>
-                  )
+                  );
                 })}
             </Slider>
           </div>
@@ -157,7 +155,7 @@ export default function Home() {
               У центрі світу завжди була сім'я. Олексій глибоко любив свою
               дружину і доньку, пишався ними, знаходив у них опору та сенс свого
               життя. Його будинок був сповнений тепла, затишку та
-              взаєморозуміння все це заслуга його характеру, кохання. терпіння
+              взаєморозуміння все це заслуга його характеру, кохання, терпіння
               та нескінченного кохання.
             </p>
           </div>
@@ -181,14 +179,12 @@ export default function Home() {
                     >
                       <Image
                         fill
-                        className={clsx(
-                          "object-cover",
-                        )}
+                        className={clsx("object-cover")}
                         src={photo}
                         alt="Фото"
                       />
                     </div>
-                  )
+                  );
                 })}
             </Slider>
           </div>
@@ -200,10 +196,10 @@ export default function Home() {
               відповідальністю за майбутнє своїх близьких, він добровільно став
               на захист своєї землі. Він зробив цей вибір усвідомлено і гідно,
               як і все у своєму житті. Служив в 503-му окремому батальйоні
-              морської піхоти
+              морської піхоти.
             </p>
           </div>
-          
+
           <div className="my-10 w-full max-w-3xl">
             <Slider
               slidesToShow={3}
@@ -223,14 +219,12 @@ export default function Home() {
                     >
                       <Image
                         fill
-                        className={clsx(
-                          "object-cover",
-                        )}
+                        className={clsx("object-cover")}
                         src={photo}
                         alt="Фото"
                       />
                     </div>
-                  )
+                  );
                 })}
             </Slider>
           </div>
@@ -263,14 +257,12 @@ export default function Home() {
                     >
                       <Image
                         fill
-                        className={clsx(
-                          "object-cover",
-                        )}
+                        className={clsx("object-cover")}
                         src={photo}
                         alt="Фото"
                       />
                     </div>
-                  )
+                  );
                 })}
             </Slider>
           </div>
@@ -283,9 +275,9 @@ export default function Home() {
         </div>
       </div>
       {/* Футер */}
-      <footer className="mt-2 w-full max-w-xl rounded-b-lg font-bold bg-[#6d6e4b] px-9 py-6 text-center font-[Cambria] text-sm text-white md:text-base">
-        Світла пам'ять про нашого захисника залишиться у наших серцях. Нехай
-        загине тіло та згасне його серце, пам'ять про нього житиме вічно.
+      <footer className="mt-2 w-full max-w-xl rounded-b-lg bg-[#6d6e4b] px-9 py-6 text-center font-[Cambria] text-sm font-bold text-white md:text-base">
+        Світла пам'ять про нього назавжди залишиться у наших серцях. Нехай його
+        ім'я живе вічно серед тих, хто пам'ятає та любить.
       </footer>
     </div>
   );

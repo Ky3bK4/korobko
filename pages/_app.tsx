@@ -2,6 +2,7 @@ import { createContext, useState, useEffect } from "react";
 import type { AppProps } from "next/app";
 import { debounce } from "@/lib/debounce";
 import "@/styles/globals.css";
+import Head from "next/head";
 
 export const MobileContext = createContext(true);
 
@@ -24,6 +25,13 @@ export default function App({ Component, pageProps }: AppProps) {
 
   return (
     <MobileContext.Provider value={isMobile}>
+      <Head>
+        <title>Коробко Олексій Леонідович</title>
+        <meta name="description" content="Коробко Олексій Леонідович" />
+        <meta property="og:title" content="Коробко Олексій Леонідович" />
+        <meta property="og:description" content="Сторінка в пам'ять про Коробко Олексія Леонідовича" />
+        <meta property="og:image" content="/assets/images/photo_2025-04-27_16-48-27.jpg" />
+      </Head>
       <Component {...pageProps} />
     </MobileContext.Provider>
   );
