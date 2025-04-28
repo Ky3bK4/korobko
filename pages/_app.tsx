@@ -30,7 +30,7 @@ export default function App({ Component, pageProps }: AppProps) {
         <meta name="description" content="Коробко Олексій Леонідович" />
         <meta property="og:title" content="Коробко Олексій Леонідович" />
         <meta property="og:description" content="Сторінка в пам'ять про Коробко Олексія Леонідовича" />
-        <meta property="og:image" content="/assets/images/photo_2025-04-27_16-48-27.jpg" />
+        <meta property="og:image" content={`${process.env.NEXT_PUBLIC_PUBLIC_URL}/assets/images/photo_2025-04-27_16-48-27.jpg`} />
       </Head>
       <Component {...pageProps} />
     </MobileContext.Provider>
