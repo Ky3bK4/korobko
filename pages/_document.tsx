@@ -4,7 +4,7 @@ import { primaryFont } from "@/fonts/fonts";
 
 export default function Document() {
   return (
-    <Html lang="en" className={primaryFont.variable}>
+    <Html lang="ua" className={primaryFont.variable}>
       <Head />
       <body className={`${primaryFont.variable} antialiased`}>
         <Main />

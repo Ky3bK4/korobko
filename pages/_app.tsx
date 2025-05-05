@@ -40,7 +40,7 @@ export default function App({ Component, pageProps }: AppProps) {
         <meta property="og:type" content="website" />
         <meta
           property="og:image"
-          content={`${process.env.NEXT_PUBLIC_PUBLIC_URL}/assets/images/photo_2025-04-27_16-48-27.jpg`}
+          content={`${process.env.NEXT_PUBLIC_PUBLIC_URL}/assets/images/photo.jpg`}
         />
         <meta property="twitter:card" content="summary_large_image" />
         <meta
@@ -54,7 +54,7 @@ export default function App({ Component, pageProps }: AppProps) {
         />
         <meta
           property="twitter:image"
-          content={`${process.env.NEXT_PUBLIC_PUBLIC_URL}/assets/images/photo_2025-04-27_16-48-27.jpg`}
+          content={`${process.env.NEXT_PUBLIC_PUBLIC_URL}/assets/images/photo.jpg`}
         />
       </Head>
       <Component {...pageProps} />
